@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SakhaAI - Youth Mental Wellness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SakhaAI</h1>
+        <p>Your Confidential Wellness Companion</p>
+    </header>
+
+    <section id="mood-tracker">
+        <h2>Mood Tracker</h2>
+        <p>How are you feeling today?</p>
+        <div class="mood-buttons">
+            <button onclick="logMood('😃')">😃</button>
+            <button onclick="logMood('😊')">😊</button>
+            <button onclick="logMood('😐')">😐</button>
+            <button onclick="logMood('😔')">😔</button>
+            <button onclick="logMood('😢')">😢</button>
+        </div>
+        <p id="mood-result"></p>
+    </section>
+
+    <section id="journal">
+        <h2>Journaling</h2>
+        <textarea id="journal-entry" placeholder="Write your thoughts..."></textarea>
+        <button onclick="saveJournal()">Save</button>
+        <p id="journal-result"></p>
+    </section>
+
+    <section id="daily-tasks">
+        <h2>Daily Self-Care Tasks</h2>
+        <button onclick="showTask()">Complete Random Task</button>
+        <p id="task-result">Try this now: Take a 5-minute walk</p>
+    </section>
+
+    <section id="ai-chat">
+        <h2>AI Guidance</h2>
+        <input type="text" id="user-message" placeholder="Type how you feel...">
+        <button onclick="getAIResponse()">Send</button>
+        <div id="chat-box"></div>
+    </section>
+
+    <section id="professional-help">
+        <h2>Professional Help</h2>
+        <p>If you need help, visit <a href="https://www.samaritans.org" target="_blank">Samaritans</a></p>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ for Youth Mental Wellness</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
